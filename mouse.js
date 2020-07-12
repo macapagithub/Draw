@@ -15,6 +15,7 @@ dibujarLinea("red", 200 - 1, 200 - 1, 200 + 1, 200 + 1,papel)
 function dibujarMouseMove(evento)
 {
   console.log(evento);
+  console.log();
 }
 
 
