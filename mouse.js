@@ -1,6 +1,3 @@
-
-
-
 document.addEventListener("mousedown", dibujarMouseDown);
 document.addEventListener("mouseup", dibujarMouseUp);
 document.addEventListener("mousemove", dibujarMouseMove);
@@ -14,8 +11,9 @@ dibujarLinea("red", 200 - 1, 200 - 1, 200 + 1, 200 + 1,papel)
 
 function dibujarMouseMove(evento)
 {
-  console.log(evento);
-  console.log();
+  var colorcito = "blue";
+  var movimiento = 0.5;
+  dibujarLinea(colorcito, evento.clientX - movimiento, evento.clientY - movimiento, evento.clientX + movimiento, evento.clientY + movimiento, papel);
 }
 
 
